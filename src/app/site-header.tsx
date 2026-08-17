@@ -41,7 +41,7 @@ export default function SiteHeader() {
           <div className="pointer-events-none invisible absolute top-full left-0 w-full border-b border-b-neutral-300 bg-white/98 opacity-0 shadow-[0_12px_24px_rgba(0,0,0,0.04)] transition-[opacity,visibility] duration-150 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
             <div className="min-h-52 px-7 pt-[3.5px] pb-4 lg:px-10">
               <div className="mx-auto grid max-w-[1600px] grid-cols-[190px_repeat(4,minmax(0,1fr))] lg:grid-cols-[230px_repeat(4,minmax(0,1fr))]">
-                <div className="col-span-4 col-start-2 mb-4 border-t border-black" />
+                <div className="col-span-4 col-start-2 mb-4 border-t border-neutral-300" />
                 <div />
                 {menus.map((column) => (
                   <div key={column.label} className="flex justify-center px-4">
@@ -56,7 +56,7 @@ export default function SiteHeader() {
         </nav>
         <details className="group ml-auto md:hidden">
           <summary className="cursor-pointer list-none pb-2 text-sm tracking-[0.12em]">MENU</summary>
-          <div className="absolute top-full left-0 max-h-[calc(100svh-5rem)] w-full overflow-y-auto border-y border-black bg-white px-5 py-5">
+          <div className="absolute top-full left-0 max-h-[calc(100svh-5rem)] w-full overflow-y-auto border-y border-neutral-300 bg-white px-5 py-5">
             {menus.map((menu) => (
               <div key={menu.label} className="border-b border-neutral-200 py-3 last:border-0">
                 <Link href={menu.href} className="mb-2 block text-sm font-semibold">{menu.label}</Link>
