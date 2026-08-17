@@ -53,7 +53,7 @@ function Header() {
                 <a href={`#${menu.label.toLowerCase().replaceAll(" ", "-")}`} className="flex h-full items-end pr-4 pb-1 pl-10 text-[18px] tracking-[-0.04em] lg:text-[21px]">
                   {menu.label}
                 </a>
-                <div className="pointer-events-none invisible absolute top-[calc(100%-0.75rem)] left-0 w-full -translate-y-1.5 border-b border-b-neutral-300 bg-white/98 opacity-0 shadow-[0_12px_24px_rgba(0,0,0,0.04)] transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                <div className="pointer-events-none invisible absolute top-full left-0 w-full -translate-y-1.5 border-b border-b-neutral-300 bg-white/98 opacity-0 shadow-[0_12px_24px_rgba(0,0,0,0.04)] transition-all duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
                   <div className="min-h-52 px-7 pb-4 lg:px-10">
                     <div className="mx-auto grid max-w-[1600px] grid-cols-[190px_repeat(4,minmax(0,1fr))] lg:grid-cols-[230px_repeat(4,minmax(0,1fr))]">
                       <div className="col-span-4 col-start-2 mb-4 border-t border-black" />
