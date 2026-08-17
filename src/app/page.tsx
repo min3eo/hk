@@ -71,14 +71,6 @@ export default function Home() {
       <main className="min-h-0 flex-1">
         <HeroSlider />
       </main>
-      <footer className="flex h-9 shrink-0 items-center justify-between border-t border-black px-4 text-[9px] tracking-[0.08em] text-neutral-500 uppercase sm:px-7 sm:text-[10px] lg:px-10">
-        <span>© H&amp;K Architects Design Group</span>
-        <span className="flex gap-3">
-          <span className="hidden sm:inline">Photos: Philrock · Dosseman · Tiraspolsky</span>
-          <a href="https://commons.wikimedia.org/wiki/File:Fassade_des_Istanbul_Modern_Museums.jpg" target="_blank" rel="noreferrer" className="hover:text-black">Credits</a>
-          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer" className="hover:text-black">CC BY-SA</a>
-        </span>
-      </footer>
     </div>
   );
 }
