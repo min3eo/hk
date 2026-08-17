@@ -135,7 +135,7 @@ function Footer() {
 
           <div>
             <h2 className="mb-5 text-[10px] tracking-[0.18em] text-white/45">PRACTICE</h2>
-            <ul className="space-y-2 text-sm text-white/75">
+            <ul className="grid gap-x-6 gap-y-2 text-sm text-white/75 lg:grid-cols-2">
               <li>Architecture Design</li>
               <li>Construction Supervision</li>
               <li>Interior Design</li>
