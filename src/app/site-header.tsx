@@ -28,7 +28,7 @@ export default function SiteHeader() {
   return (
     <header className="relative z-20 bg-white px-4 pt-3 sm:px-7 lg:px-10">
       <div className="mx-auto grid max-w-[1600px] grid-cols-[190px_minmax(0,1fr)] items-end pb-3 lg:grid-cols-[230px_minmax(0,1fr)]">
-        <div className="pb-1"><Logo /></div>
+        <div className="flex h-full items-center"><Logo /></div>
         <nav className="group hidden flex-1 self-stretch md:block" aria-label="주 메뉴">
           <ul className="grid h-full grid-cols-4 items-end">
             {menus.map((menu) => (
