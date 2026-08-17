@@ -17,9 +17,9 @@ function Logo() {
         width={408}
         height={112}
         priority
-        className="h-auto w-[120px] sm:w-[145px]"
+        className="h-auto w-[115px] sm:w-[138px]"
       />
-      <span className="mt-1 block text-[11px] italic tracking-[0.12em] text-neutral-500 uppercase sm:text-xs">Architects Design Group</span>
+      <span className="mt-1 block text-center text-[11px] font-medium italic tracking-[0.1em] text-neutral-500 uppercase sm:text-xs">Architects Design Group</span>
     </Link>
   );
 }
