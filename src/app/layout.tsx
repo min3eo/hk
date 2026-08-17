@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js + Tailwind CSS",
-  description: "A Next.js app styled with Tailwind CSS",
+  title: "H&K Architects Design Group",
+  description: "H&K Architects Design Group의 건축 프로젝트와 공모전",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

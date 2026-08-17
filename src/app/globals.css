@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+:root {
+  --font-logo: Georgia, "Times New Roman", serif;
+}
+
+html { scroll-behavior: smooth; }
