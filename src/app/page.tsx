@@ -120,6 +120,54 @@ function NewsSection() {
   );
 }
 
+function Footer() {
+  return (
+    <footer className="bg-[#111] px-5 pt-14 pb-6 text-white sm:px-8 sm:pt-18 lg:px-12">
+      <div className="mx-auto max-w-[1500px]">
+        <div className="grid gap-12 border-b border-white/25 pb-14 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr] lg:gap-10">
+          <div>
+            <p className="font-[family-name:var(--font-logo)] text-5xl leading-none tracking-[-0.08em] sm:text-6xl">H&amp;K</p>
+            <p className="mt-4 max-w-sm text-sm leading-6 text-white/55">
+              공간의 본질을 탐구하고, 사람과 도시의 오래 지속되는 관계를 설계합니다.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="mb-5 text-[10px] tracking-[0.18em] text-white/45">OFFICE</h2>
+            <address className="text-sm leading-6 text-white/75 not-italic">
+              Seongnam-si, Gyeonggi-do<br />
+              Republic of Korea
+            </address>
+          </div>
+
+          <div>
+            <h2 className="mb-5 text-[10px] tracking-[0.18em] text-white/45">PRACTICE</h2>
+            <ul className="space-y-2 text-sm text-white/75">
+              <li>Architecture Design</li>
+              <li>Construction Supervision</li>
+              <li>Interior Design</li>
+              <li>Project Planning</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="mb-5 text-[10px] tracking-[0.18em] text-white/45">COMPANY</h2>
+            <dl className="space-y-2 text-sm text-white/75">
+              <div><dt className="inline text-white/40">TYPE&nbsp;&nbsp;</dt><dd className="inline">Architects Office</dd></div>
+              <div><dt className="inline text-white/40">EST.&nbsp;&nbsp;</dt><dd className="inline">2013</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-3 pt-6 text-[9px] tracking-[0.12em] text-white/35 uppercase sm:flex-row sm:items-center sm:justify-between sm:text-[10px]">
+          <p>© {new Date().getFullYear()} H&amp;K Architects. All rights reserved.</p>
+          <a href="#" className="w-fit transition-colors hover:text-white">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-[family-name:var(--font-geist-sans)] text-black">
@@ -130,6 +178,7 @@ export default function Home() {
         </main>
       </div>
       <NewsSection />
+      <Footer />
     </div>
   );
 }
