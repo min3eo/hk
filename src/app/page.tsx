@@ -43,7 +43,7 @@ function Logo() {
 
 function Header() {
   return (
-    <header className="relative z-20 border-t border-black bg-white px-4 pt-3 sm:px-7 lg:px-10">
+    <header className="relative z-20 bg-white px-4 pt-3 sm:px-7 lg:px-10">
       <div className="mx-auto grid max-w-[1600px] grid-cols-[190px_minmax(0,1fr)] items-end pb-3 lg:grid-cols-[230px_minmax(0,1fr)]">
         <div className="pb-1"><Logo /></div>
         <nav className="hidden flex-1 self-stretch md:block" aria-label="주 메뉴">
@@ -78,7 +78,7 @@ function Header() {
             {menus.map((menu) => (
               <div key={menu.label} className="border-b border-neutral-200 py-3 last:border-0">
                 <p className="mb-2 text-sm font-semibold">{menu.label}</p>
-                <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-neutral-600">
+                <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-neutral-600">
                   {menu.items.map((item) => <a key={item} href="#project">{item}</a>)}
                 </div>
               </div>
