@@ -12,9 +12,9 @@ export default function ContactUsPage() {
   return (
     <div className="flex min-h-screen flex-col bg-white font-[family-name:var(--font-geist-sans)] text-black">
       <SiteHeader />
-      <main className="flex-1 border-t border-black px-5 py-16 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
+      <main className="flex-1 px-5 pt-8 pb-16 sm:px-8 sm:pt-12 sm:pb-20 lg:px-12 lg:pt-14 lg:pb-24">
         <div className="mx-auto max-w-[1500px]">
-          <div className="grid border-t border-black lg:grid-cols-[minmax(0,1.4fr)_minmax(320px,0.6fr)]">
+          <div className="grid border-t border-neutral-300 lg:grid-cols-[minmax(0,1.4fr)_minmax(320px,0.6fr)]">
             <section className="border-b border-neutral-300 py-10 lg:border-r lg:border-b-0 lg:pr-14 xl:pr-20">
               <ContactForm />
             </section>
