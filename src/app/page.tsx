@@ -165,7 +165,7 @@ function Footer() {
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-[family-name:var(--font-geist-sans)] text-black">
-      <div className="flex h-screen min-h-screen flex-col overflow-hidden">
+      <div data-hero-shell className="flex h-svh flex-col overflow-hidden">
         <Header />
         <main className="min-h-0 flex-1">
           <HeroSlider />

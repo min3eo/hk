@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const slides = [
   {
@@ -27,6 +27,7 @@ const slides = [
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
+  const sliderRef = useRef<HTMLElement>(null);
 
   const move = useCallback((direction: number) => {
     setCurrent((index) => (index + direction + slides.length) % slides.length);
@@ -38,8 +39,33 @@ export default function HeroSlider() {
     return () => window.clearInterval(timer);
   }, [move, paused]);
 
+  useEffect(() => {
+    const shell = sliderRef.current?.closest<HTMLElement>("[data-hero-shell]");
+    if (!shell) return;
+
+    let viewportWidth = window.innerWidth;
+    const lockHeight = () => {
+      shell.style.height = `${window.innerHeight}px`;
+    };
+    const handleResize = () => {
+      if (window.innerWidth === viewportWidth) return;
+      viewportWidth = window.innerWidth;
+      lockHeight();
+    };
+
+    lockHeight();
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("orientationchange", lockHeight);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("orientationchange", lockHeight);
+      shell.style.removeProperty("height");
+    };
+  }, []);
+
   return (
     <section
+      ref={sliderRef}
       className="relative h-full min-h-0 w-full overflow-hidden bg-neutral-900"
       aria-label="주요 건축 프로젝트"
       aria-roledescription="carousel"
