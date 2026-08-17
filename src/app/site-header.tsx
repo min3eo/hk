@@ -10,7 +10,7 @@ const menus = [
 
 function Logo() {
   return (
-    <Link href="/" className="block w-fit leading-none" aria-label="H and K 홈">
+    <Link href="/" className="mt-1 block w-fit leading-none" aria-label="H and K 홈">
       <Image
         src="/hk-logo.svg"
         alt="H&amp;K"
