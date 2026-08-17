@@ -43,7 +43,7 @@ export default function GimcheonCompetitionPage() {
 
           <figure className="mt-10 sm:mt-12">
             <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100 sm:aspect-[16/9]">
-              <Image src="/projects/gimcheon-2026/hero.png" alt="김천의료원 장례식장 증축안 주출입구 투시도" fill priority sizes="(min-width: 1080px) 1080px, 100vw" className="object-cover" />
+              <Image src="/main.jpg" alt="김천의료원 장례식장 증축안 주출입구 투시도" fill priority sizes="(min-width: 1080px) 1080px, 100vw" className="object-cover" />
             </div>
             <figcaption className="mt-3 text-[10px] tracking-[0.12em] text-neutral-400">MAIN ENTRANCE VIEW</figcaption>
           </figure>
