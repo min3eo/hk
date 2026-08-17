@@ -105,7 +105,7 @@ export default function HeroSlider() {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 z-[15] h-32 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.42)_20%,rgba(255,255,255,0.12)_48%,transparent_100%)] sm:h-44 lg:h-56"
+        className="pointer-events-none absolute inset-x-0 top-0 z-[15] h-36 bg-[linear-gradient(to_bottom,white_0%,rgba(255,255,255,0.72)_16%,rgba(255,255,255,0.28)_38%,rgba(255,255,255,0.08)_68%,transparent_100%)] sm:h-48 lg:h-64"
       />
 
       <button type="button" onClick={() => move(-1)} className="absolute top-1/2 left-3 z-20 -translate-y-1/2 p-3 text-4xl font-light text-white drop-shadow-md transition-opacity hover:opacity-60 sm:left-6 sm:text-5xl" aria-label="이전 슬라이드">‹</button>
