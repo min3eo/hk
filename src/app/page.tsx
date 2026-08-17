@@ -124,14 +124,7 @@ function Footer() {
   return (
     <footer className="bg-[#111] px-5 pt-14 pb-6 text-white sm:px-8 sm:pt-18 lg:px-12">
       <div className="mx-auto max-w-[1500px]">
-        <div className="grid gap-12 border-b border-white/25 pb-14 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr] lg:gap-10">
-          <div>
-            <p className="font-[family-name:var(--font-logo)] text-5xl leading-none tracking-[-0.08em] sm:text-6xl">H&amp;K</p>
-            <p className="mt-4 max-w-sm text-sm leading-6 text-white/55">
-              공간의 본질을 탐구하고, 사람과 도시의 오래 지속되는 관계를 설계합니다.
-            </p>
-          </div>
-
+        <div className="grid gap-12 border-b border-white/25 pb-14 sm:grid-cols-3 lg:gap-16">
           <div>
             <h2 className="mb-5 text-[10px] tracking-[0.18em] text-white/45">OFFICE</h2>
             <address className="text-sm leading-6 text-white/75 not-italic">
