@@ -20,7 +20,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ko" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body suppressHydrationWarning className="min-h-screen antialiased">
+        {children}
+      </body>
     </html>
   );
 }
