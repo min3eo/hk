@@ -4,17 +4,17 @@ import Link from "next/link";
 import SiteHeader from "../../site-header";
 
 export const metadata: Metadata = {
-  title: "2026 Gimcheon-si Competition | H&K Architects",
-  description: "김천시 복합문화시설 건립 설계공모 프로젝트",
+  title: "김천의료원 장례식장 증축 설계공모 | H&K Architects",
+  description: "김천의료원 장례식장 증축사업 설계용역 건축설계공모",
 };
 
 const projectInfo = [
-  ["당선년도", "2026"],
-  ["용역명", "김천시 복합문화시설 건립 설계용역"],
-  ["발주처", "김천시"],
-  ["위치", "경상북도 김천시"],
-  ["유형", "건축 설계공모 · 당선"],
-  ["용도", "문화 및 집회시설"],
+  ["당선년도", "심사 결과 발표 후 업데이트"],
+  ["용역명", "김천의료원 장례식장 증축사업 설계용역"],
+  ["발주처", "경상북도 김천의료원"],
+  ["위치", "경상북도 김천시 모암길 24"],
+  ["연면적", "3,833.15㎡"],
+  ["상태", "2026 건축설계공모 진행 중"],
 ];
 
 export default function GimcheonCompetitionPage() {
@@ -29,9 +29,8 @@ export default function GimcheonCompetitionPage() {
               <span>/</span>
               <span className="text-black">2026 GIMCHEON-SI</span>
             </div>
-            <p className="mb-3 text-xs font-medium tracking-[0.12em] text-neutral-500">WINNING COMPETITION · 2026</p>
-            <h1 className="text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.08] font-medium tracking-[-0.045em]">김천시 복합문화시설</h1>
-            <p className="mt-3 text-sm font-medium tracking-[0.02em] text-neutral-500 sm:text-base">GIMCHEON CULTURE COMMONS</p>
+            <h1 className="max-w-4xl text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.08] font-medium tracking-[-0.045em]">김천의료원 장례식장 증축</h1>
+            <p className="mt-3 text-sm font-medium tracking-[0.02em] text-neutral-500 sm:text-base">GIMCHEON MEDICAL CENTER FUNERAL HALL EXTENSION</p>
             <dl className="mt-8 grid border-t border-black sm:grid-cols-2 lg:mt-10">
               {projectInfo.map(([label, value]) => (
                 <div key={label} className="grid grid-cols-[82px_1fr] gap-4 border-b border-neutral-300 py-3 text-sm sm:odd:pr-8 sm:even:pl-8">
@@ -44,44 +43,42 @@ export default function GimcheonCompetitionPage() {
 
           <figure className="mt-10 sm:mt-12">
             <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100 sm:aspect-[16/9]">
-              <Image src="/projects/gimcheon-2026/hero.png" alt="김천시 복합문화시설 중앙 마당 투시도" fill priority sizes="(min-width: 1080px) 1080px, 100vw" className="object-cover" />
+              <Image src="/projects/gimcheon-2026/hero.png" alt="김천의료원 장례식장 증축안 주출입구 투시도" fill priority sizes="(min-width: 1080px) 1080px, 100vw" className="object-cover" />
             </div>
-            <figcaption className="mt-3 text-[10px] tracking-[0.12em] text-neutral-400">CENTRAL COURTYARD VIEW</figcaption>
+            <figcaption className="mt-3 text-[10px] tracking-[0.12em] text-neutral-400">MAIN ENTRANCE VIEW</figcaption>
           </figure>
 
           <section className="mx-auto max-w-[800px] py-12 sm:py-16">
-            <p className="text-xs font-medium tracking-[0.12em] text-neutral-500">작품소개</p>
             <h2 className="mt-4 text-2xl leading-[1.42] font-medium tracking-[-0.03em] sm:text-3xl">
-              서로 다른 일상이 하나의 마당에서 만나고,<br className="hidden sm:block" /> 도시의 풍경이 건축 안으로 이어집니다.
+              고인을 배웅하는 마지막 시간이<br className="hidden sm:block" /> 차분하고 온전하게 머무는 공간을 만듭니다.
             </h2>
             <div className="mt-6 space-y-4 text-[15px] leading-7 text-neutral-800 sm:text-base">
-              <p>김천의 새로운 공공문화 거점은 하나의 큰 건물보다 여러 개의 친근한 볼륨이 마당을 감싸는 모습으로 계획했습니다. 중앙의 열린 공간은 도서관, 전시, 교육과 커뮤니티 프로그램을 연결하며 일상적인 산책과 만남까지 받아들입니다.</p>
-              <p>붉은 벽돌과 목재 루버는 시간에 따라 깊어지는 재료의 표정을 만들고, 깊은 처마와 투명한 저층부는 내부 활동을 도시로 드러냅니다. 계절과 운영 방식이 달라져도 유연하게 변화할 수 있는 지속 가능한 공공건축을 제안합니다.</p>
+              <p>김천의료원의 기존 의료 기능을 방해하지 않으면서 장례식장 이용객에게 독립적이고 명확한 접근 체계를 제공하는 증축안을 제안합니다. 깊은 진입 캐노피와 단정한 전면 공간은 방문객을 자연스럽게 안내하고 외부의 소음과 시선을 완충합니다.</p>
+              <p>빈소와 유가족 공간, 조문객 동선, 관리 및 서비스 동선을 세심하게 분리해 운영의 효율과 이용자의 프라이버시를 함께 확보했습니다. 내부 곳곳에 작은 중정과 자연광을 끌어들여 긴 대기와 애도의 시간에도 안정감을 느낄 수 있도록 계획했습니다.</p>
             </div>
           </section>
 
           <figure>
             <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100 sm:aspect-[16/9]">
-              <Image src="/projects/gimcheon-2026/aerial.png" alt="김천시 복합문화시설 배치 조감도" fill sizes="(min-width: 1080px) 1080px, 100vw" className="object-cover" />
+              <Image src="/projects/gimcheon-2026/aerial.png" alt="김천의료원 장례식장 증축안 배치 조감도" fill sizes="(min-width: 1080px) 1080px, 100vw" className="object-cover" />
             </div>
-            <figcaption className="mt-3 flex justify-between gap-6 text-[10px] tracking-[0.1em] text-neutral-400"><span>AERIAL VIEW</span><span>도시와 연결되는 열린 배치</span></figcaption>
+            <figcaption className="mt-3 flex justify-between gap-6 text-[10px] tracking-[0.1em] text-neutral-400"><span>AERIAL VIEW</span><span>의료원과 연결되는 독립적 동선</span></figcaption>
           </figure>
 
           <section className="mx-auto max-w-[800px] py-12 sm:py-16">
-            <p className="text-xs font-medium tracking-[0.12em] text-neutral-500">설계개념</p>
-            <h2 className="mt-4 text-2xl font-medium tracking-[-0.03em] sm:text-3xl">열린 마당, 이어지는 일상</h2>
+            <h2 className="mt-4 text-2xl font-medium tracking-[-0.03em] sm:text-3xl">존중과 배려로 완성하는 공간</h2>
             <div className="mt-6 border-t border-black">
-              <div className="grid gap-2 border-b border-neutral-300 py-4 sm:grid-cols-[150px_1fr]"><h3 className="font-medium">도시를 잇는 마당</h3><p className="text-sm leading-6 text-neutral-700">주변의 보행 흐름을 중앙 마당으로 모아 누구나 자연스럽게 지나고 머무를 수 있는 공공의 중심을 만듭니다.</p></div>
-              <div className="grid gap-2 border-b border-neutral-300 py-4 sm:grid-cols-[150px_1fr]"><h3 className="font-medium">풍경을 담는 건축</h3><p className="text-sm leading-6 text-neutral-700">낮은 매스와 열린 틈을 통해 김천의 산세와 도시 풍경이 건물 안쪽까지 이어지도록 계획했습니다.</p></div>
-              <div className="grid gap-2 border-b border-neutral-300 py-4 sm:grid-cols-[150px_1fr]"><h3 className="font-medium">유연한 공공 공간</h3><p className="text-sm leading-6 text-neutral-700">독립적으로 운영되는 프로그램과 공유 공간을 결합해 시간과 수요의 변화에 오래 대응합니다.</p></div>
+              <div className="grid gap-2 border-b border-neutral-300 py-4 sm:grid-cols-[150px_1fr]"><h3 className="font-medium">분리된 동선</h3><p className="text-sm leading-6 text-neutral-700">조문객과 유가족, 서비스 차량의 흐름을 분리해 프라이버시를 지키고 기존 의료원의 운영 부담을 줄입니다.</p></div>
+              <div className="grid gap-2 border-b border-neutral-300 py-4 sm:grid-cols-[150px_1fr]"><h3 className="font-medium">치유의 중정</h3><p className="text-sm leading-6 text-neutral-700">외부 시선에서 보호된 작은 정원과 자연광을 내부 깊숙이 들여와 조용히 숨을 고를 수 있는 장소를 마련합니다.</p></div>
+              <div className="grid gap-2 border-b border-neutral-300 py-4 sm:grid-cols-[150px_1fr]"><h3 className="font-medium">절제된 재료</h3><p className="text-sm leading-6 text-neutral-700">밝은 벽돌과 따뜻한 목재, 깊은 처마를 사용해 공공시설의 견고함과 장례공간에 필요한 차분함을 함께 담습니다.</p></div>
             </div>
           </section>
 
           <figure>
             <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100 sm:aspect-[16/9]">
-              <Image src="/projects/gimcheon-2026/interior.png" alt="중앙 마당과 연결된 커뮤니티 라운지" fill sizes="(min-width: 1080px) 1080px, 100vw" className="object-cover" />
+              <Image src="/projects/gimcheon-2026/interior.png" alt="추모 정원과 연결된 유가족 대기 공간" fill sizes="(min-width: 1080px) 1080px, 100vw" className="object-cover" />
             </div>
-            <figcaption className="mt-3 flex justify-between gap-6 text-[10px] tracking-[0.1em] text-neutral-400"><span>COMMUNITY LOUNGE</span><span>마당과 내부를 잇는 생활 공간</span></figcaption>
+            <figcaption className="mt-3 flex justify-between gap-6 text-[10px] tracking-[0.1em] text-neutral-400"><span>FAMILY LOUNGE</span><span>추모 정원과 연결된 대기 공간</span></figcaption>
           </figure>
 
           <nav className="mt-14 flex items-center justify-between gap-8 border-t border-black pt-5 text-xs font-medium tracking-[0.1em] sm:mt-16" aria-label="프로젝트 이동">
