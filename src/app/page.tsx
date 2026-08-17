@@ -49,8 +49,8 @@ function Header() {
         <nav className="group hidden flex-1 self-stretch md:block" aria-label="주 메뉴">
           <ul className="grid h-full grid-cols-4 items-end">
             {menus.map((menu) => (
-              <li key={menu.label} className="static flex h-full items-end justify-start">
-                <a href={`#${menu.label.toLowerCase().replaceAll(" ", "-")}`} className="flex h-full items-end pr-4 pb-1 pl-10 text-[18px] tracking-[-0.04em] lg:text-[21px]">
+              <li key={menu.label} className="static flex h-full items-end justify-center">
+                <a href={`#${menu.label.toLowerCase().replaceAll(" ", "-")}`} className="flex h-full items-end px-4 pb-1 text-[18px] tracking-[-0.04em] lg:text-[21px]">
                   {menu.label}
                 </a>
               </li>
