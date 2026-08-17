@@ -45,7 +45,7 @@ export default function SiteHeader() {
                 {menus.map((column) => (
                   <div key={column.label} className="flex justify-center px-4">
                     <ul className="w-fit space-y-1 text-left">
-                      {column.items.map((item) => <li key={item}><Link href={column.href} className="text-[15px] hover:underline lg:text-base">{item}</Link></li>)}
+                      {column.items.map((item) => <li key={item}><Link href={item === "2026 GIMCHEON-SI" ? "/competitions/gimcheon-2026" : column.href} className="text-[15px] hover:underline lg:text-base">{item}</Link></li>)}
                     </ul>
                   </div>
                 ))}
@@ -60,7 +60,7 @@ export default function SiteHeader() {
               <div key={menu.label} className="border-b border-neutral-200 py-3 last:border-0">
                 <Link href={menu.href} className="mb-2 block text-sm font-semibold">{menu.label}</Link>
                 <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-neutral-600">
-                  {menu.items.map((item) => <Link key={item} href={menu.href}>{item}</Link>)}
+                  {menu.items.map((item) => <Link key={item} href={item === "2026 GIMCHEON-SI" ? "/competitions/gimcheon-2026" : menu.href}>{item}</Link>)}
                 </div>
               </div>
             ))}
