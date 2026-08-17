@@ -1,10 +1,35 @@
 import HeroSlider from "./hero-slider";
+import Image from "next/image";
 
 const menus = [
   { label: "PROJECTS", items: ["2026 JEONGSEON-GUN", "2026 GOYANG-SI", "2025 JEONGSEON-GUN", "2025 GANGSEO-GU", "2024 ULJU-GUN", "2024 SOKCHO-SI"] },
   { label: "COMPETITIONS", items: ["2026 GIMCHEON-SI", "2026 NAMWON-SI", "2026 BORYEONG-SI", "2026 HONGCEHON-GUN", "2026 JEONGSEON-GUN", "2026 YONGIN-SI", "2026 GANGNEUNG-SI"] },
   { label: "ABOUT US", items: ["ARCHITECTS", "HISTORY", "OUR DESIGNS"] },
   { label: "CONTACT US", items: ["OFFICE", "ADDRESS BOOK"] },
+];
+
+const news = [
+  {
+    image: "/slides/istanbul-waterfront.jpg",
+    category: "COMPETITION",
+    date: "2026.08",
+    title: "도시와 수변을 연결하는 새로운 문화시설 계획",
+    position: "center center",
+  },
+  {
+    image: "/slides/via-57-west.jpg",
+    category: "PROJECT",
+    date: "2026.06",
+    title: "도심형 복합주거 설계 프로젝트 선정",
+    position: "center 42%",
+  },
+  {
+    image: "/slides/istanbul-modern.jpg",
+    category: "NEWS",
+    date: "2026.04",
+    title: "H&K가 제안하는 열린 미술관과 공공 공간",
+    position: "left center",
+  },
 ];
 
 function Logo() {
@@ -64,13 +89,47 @@ function Header() {
   );
 }
 
+function NewsSection() {
+  return (
+    <section id="news" className="bg-white px-5 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-32">
+      <div className="mx-auto max-w-[1500px]">
+        <div className="mb-10 flex items-end justify-between border-b border-black pb-4 sm:mb-14">
+          <h2 className="text-2xl font-normal tracking-[0.04em] sm:text-3xl">NEWS</h2>
+          <a href="#news" className="text-[10px] tracking-[0.14em] text-neutral-500 transition-colors hover:text-black sm:text-xs">VIEW ALL</a>
+        </div>
+        <div className="grid gap-x-5 gap-y-12 md:grid-cols-3 lg:gap-x-8">
+          {news.map((item) => (
+            <article key={item.title} className="group">
+              <a href="#news" className="block">
+                <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
+                  <Image src={item.image} alt={item.title} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]" style={{ objectPosition: item.position }} />
+                </div>
+                <div className="border-b border-neutral-300 py-4">
+                  <div className="mb-3 flex items-center justify-between text-[10px] tracking-[0.14em] text-neutral-500 sm:text-xs">
+                    <span>{item.category}</span>
+                    <time>{item.date}</time>
+                  </div>
+                  <h3 className="text-base leading-snug tracking-[-0.025em] underline-offset-4 group-hover:underline sm:text-lg">{item.title}</h3>
+                </div>
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
-    <div className="flex h-svh flex-col overflow-hidden bg-white font-[family-name:var(--font-geist-sans)] text-black">
-      <Header />
-      <main className="min-h-0 flex-1">
-        <HeroSlider />
-      </main>
+    <div className="min-h-screen bg-white font-[family-name:var(--font-geist-sans)] text-black">
+      <div className="flex h-svh flex-col overflow-hidden">
+        <Header />
+        <main className="min-h-0 flex-1">
+          <HeroSlider />
+        </main>
+      </div>
+      <NewsSection />
     </div>
   );
 }
