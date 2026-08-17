@@ -103,6 +103,11 @@ export default function HeroSlider() {
         </div>
       ))}
 
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 z-[15] h-24 bg-gradient-to-b from-white via-white/55 to-transparent sm:h-32 lg:h-40"
+      />
+
       <button type="button" onClick={() => move(-1)} className="absolute top-1/2 left-3 z-20 -translate-y-1/2 p-3 text-4xl font-light text-white drop-shadow-md transition-opacity hover:opacity-60 sm:left-6 sm:text-5xl" aria-label="이전 슬라이드">‹</button>
       <button type="button" onClick={() => move(1)} className="absolute top-1/2 right-3 z-20 -translate-y-1/2 p-3 text-4xl font-light text-white drop-shadow-md transition-opacity hover:opacity-60 sm:right-6 sm:text-5xl" aria-label="다음 슬라이드">›</button>
 
