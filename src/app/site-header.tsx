@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const menus = [
@@ -10,7 +11,14 @@ const menus = [
 function Logo() {
   return (
     <Link href="/" className="block w-fit leading-none" aria-label="H and K 홈">
-      <span className="font-[family-name:var(--font-logo)] text-[54px] tracking-[-0.08em] text-black sm:text-[68px]">H&amp;K</span>
+      <Image
+        src="/hk-logo.svg"
+        alt="H&amp;K"
+        width={408}
+        height={112}
+        priority
+        className="h-auto w-[150px] sm:w-[180px]"
+      />
       <span className="mt-1 block text-[11px] tracking-[0.12em] text-neutral-500 uppercase sm:text-xs">Architects Design Group</span>
     </Link>
   );
