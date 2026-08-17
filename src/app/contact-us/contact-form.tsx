@@ -13,7 +13,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-20 border-t border-black pt-8 sm:mt-28 sm:pt-10">
+    <form onSubmit={handleSubmit}>
       <div className="mb-12 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="mb-3 text-[10px] tracking-[0.18em] text-neutral-400">PROJECT INQUIRY</p>
