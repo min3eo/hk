@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "../site-header";
+import ContactForm from "./contact-form";
 
 export const metadata: Metadata = {
   title: "Contact Us | H&K Architects",
@@ -54,6 +55,7 @@ export default function ContactUsPage() {
               </p>
             </section>
           </div>
+          <ContactForm />
         </div>
       </main>
 
