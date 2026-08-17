@@ -1,3 +1,5 @@
+import HeroSlider from "./hero-slider";
+
 const menus = [
   { label: "PROJECTS", items: ["2026 JEONGSEON-GUN", "2026 GOYANG-SI", "2025 JEONGSEON-GUN", "2025 GANGSEO-GU", "2024 ULJU-GUN", "2024 SOKCHO-SI"] },
   { label: "COMPETITIONS", items: ["2026 GIMCHEON-SI", "2026 NAMWON-SI", "2026 BORYEONG-SI", "2026 HONGCEHON-GUN", "2026 JEONGSEON-GUN", "2026 YONGIN-SI", "2026 GANGNEUNG-SI"] },
@@ -64,24 +66,19 @@ function Header() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white font-[family-name:var(--font-geist-sans)] text-black">
+    <div className="flex h-svh flex-col overflow-hidden bg-white font-[family-name:var(--font-geist-sans)] text-black">
       <Header />
-      <main id="project" className="mx-auto grid max-w-[1160px] gap-8 px-5 py-16 sm:px-8 md:grid-cols-[minmax(280px,420px)_1fr] md:py-24 lg:gap-14 lg:py-28">
-        <div className="aspect-[3/4] w-full border border-neutral-500" role="img" aria-label="프로젝트 이미지 영역" />
-        <article className="pt-0 md:pt-1">
-          <p className="text-4xl font-medium tracking-[-0.04em]">2026</p>
-          <h1 className="mt-1 text-xl leading-snug tracking-[-0.04em] sm:text-2xl">보령시 관창일반산업단지 기숙사 증축 설계용역</h1>
-          <p className="mt-1 text-sm tracking-[0.02em] text-neutral-400 sm:text-base">BORYEONG-SI GWANCHANG INDUSTRIAL COMPLEX DORMITORY</p>
-          <div className="mt-10 sm:mt-12">
-            <h2 className="border-b-4 border-double border-black pb-2 text-lg">우수작(가작)</h2>
-            <div className="mt-4 space-y-6 text-[15px] leading-[1.65] tracking-[-0.02em] sm:text-base">
-              <p>대지의 흐름과 주변 경관을 존중하며, 사용자의 일상과 자연스럽게 연결되는 공간을 계획했습니다. 단순하고 명료한 동선 안에 다양한 휴식과 교류의 장면을 담아 새로운 기숙 환경을 제안합니다.</p>
-              <p>건물의 입면은 절제된 재료와 반복되는 리듬으로 구성하고, 빛과 그림자의 변화를 통해 시간에 따라 다른 표정을 갖도록 했습니다. 공용 공간은 외부 마당과 연계해 열린 생활의 중심이 됩니다.</p>
-              <p>효율적인 구조와 지속 가능한 설비 계획을 바탕으로 오래 사용될 수 있는 건축을 지향합니다.</p>
-            </div>
-          </div>
-        </article>
+      <main className="min-h-0 flex-1">
+        <HeroSlider />
       </main>
+      <footer className="flex h-9 shrink-0 items-center justify-between border-t border-black px-4 text-[9px] tracking-[0.08em] text-neutral-500 uppercase sm:px-7 sm:text-[10px] lg:px-10">
+        <span>© H&amp;K Architects Design Group</span>
+        <span className="flex gap-3">
+          <span className="hidden sm:inline">Photos: Philrock · Dosseman · Tiraspolsky</span>
+          <a href="https://commons.wikimedia.org/wiki/File:Fassade_des_Istanbul_Modern_Museums.jpg" target="_blank" rel="noreferrer" className="hover:text-black">Credits</a>
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer" className="hover:text-black">CC BY-SA</a>
+        </span>
+      </footer>
     </div>
   );
 }
