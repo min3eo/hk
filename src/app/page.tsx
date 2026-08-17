@@ -62,8 +62,8 @@ function Header() {
                 <div className="col-span-4 col-start-2 mb-4 border-t border-black" />
                 <div />
                 {menus.map((column) => (
-                  <div key={column.label} className="pr-4 pl-10">
-                    <ul className="space-y-1">
+                  <div key={column.label} className="flex justify-center px-4">
+                    <ul className="w-fit space-y-1 text-left">
                       {column.items.map((item) => <li key={item}><a href="#project" className="text-[15px] hover:underline lg:text-base">{item}</a></li>)}
                     </ul>
                   </div>
